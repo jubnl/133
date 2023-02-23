@@ -18,4 +18,4 @@ Route::get('login', function () {
     return response()->json(["loginUrl" => env("LOGIN_URL")]);
 })->name("login");
 
-Route::apiResource('task', TaskController::class);
+Route::apiResource('tasks', TaskController::class);
